@@ -1,0 +1,83 @@
+.testimonios {
+  padding: 10px 0;
+  width: 100%;
+}
+
+.testimonios-container {
+  display: flex;
+  gap: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.075);
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.testimonio {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 0 0 auto;
+  transition: transform 0.3s ease;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.nombre-test {
+  color: rgb(24, 168, 168);
+}
+
+.testimonio:hover {
+  transform: translateY(-10px);
+}
+
+.text-testimonio {
+  font-size: 1rem;
+  color: #666;
+  font-family: "Diact-Regular";
+  margin-bottom: 10px;
+}
+
+.nombre-testimonio {
+  font-size: 1.1rem;
+  color: #333;
+  font-family: "Abel-Regular";
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  .testimonios {
+    overflow: hidden;
+    width: 560px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .testimonios-container {
+    display: flex;
+    width: 100%;
+  }
+
+  .testimonio {
+    width: 550px;
+    box-sizing: border-box;
+    padding: 20px;
+    animation: slide 16s infinite;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0%);
+    }
+    25% {
+      transform: translateX(-105%);
+    }
+    50% {
+      transform: translateX(-208%);
+    }
+    75% {
+      transform: translateX(-310%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+}

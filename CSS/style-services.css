@@ -1,0 +1,177 @@
+@font-face {
+  font-family: "Abel-Regular";
+  src: url("../FONTS/Abel-Regular.ttf") format("TrueType");
+}
+
+@font-face {
+  font-family: "Diact-Regular";
+  src: url("../FONTS/DidactGothic-Regular.ttf") format("TrueType");
+}
+
+.servicios {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.075);
+  padding: 100px;
+  margin-top: -100px;
+}
+
+.servicios h2 {
+  font-family: "Abel-Regular";
+}
+
+.servicios-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.servicio {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  transition: transform 1.5s ease;
+  transition: border-color 1.5s ease;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 70px;
+}
+
+.icono {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+}
+
+.servicio:hover .icono {
+  transform: scale(1.2);
+}
+
+.icono i {
+  font-size: 2rem;
+  color: black;
+}
+
+.contenido {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.servicio h3 {
+  font-size: 24px;
+  margin: 0;
+  color: #333;
+  text-align: justify;
+  transition: all 0.5s ease;
+  font-family: "Abel-Regular";
+}
+
+.servicio h3 span {
+  font-size: 18px;
+  transition: all 0.5s ease;
+  font-family: "Diact-Regular";
+}
+
+.servicio p {
+  font-size: 17px;
+  color: #666;
+  font-family: "Diact-Regular";
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
+.servicio:hover h3 {
+  font-size: 24px;
+  transform: translateY(-10px);
+}
+
+.servicio:hover p {
+  max-height: 100px;
+  opacity: 1;
+}
+
+.button {
+  border: solid;
+  height: 85px;
+  width: 180px;
+  background: #464646;
+  border-radius: 15px;
+  font-size: 25px;
+  color: #fff;
+  margin: auto;
+  display: block;
+  transition: background 0.3s ease;
+  font-family: "Abel-Regular";
+}
+
+.button:hover {
+  background-color: #000000;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .servicio:hover,
+  .servicio:hover span,
+  .servicio:hover .icono,
+  .servicio:hover h3,
+  .servicio:hover p {
+    transform: none;
+    border-color: transparent;
+    max-height: none;
+    opacity: 1;
+    transition: none;
+  }
+
+  .servicios-container {
+    width: 95%;
+  }
+
+  .servicio {
+    flex-direction: column;
+    padding: 20px;
+    max-height: none;
+    height: auto;
+    transition: none;
+    transform: none;
+  }
+
+  .icono {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: none;
+    transform: none;
+  }
+
+  .contenido {
+    width: 100%;
+  }
+
+  .servicio h3 {
+    margin: 10px 0;
+    transition: none;
+    transform: none;
+  }
+
+  .servicio p {
+    max-height: none;
+    opacity: 1;
+  }
+}

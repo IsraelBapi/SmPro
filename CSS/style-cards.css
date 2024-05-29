@@ -1,0 +1,168 @@
+.avisos h2 {
+  font-family: "Abel-Regular";
+}
+
+.cont-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  height: 700px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.075);
+  width: 100%;
+}
+
+.card {
+  width: 400px;
+  height: 550px;
+  cursor: pointer;
+  transition: transform 0.3s ease, z-index 0.3s ease;
+  position: absolute;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: #fff;
+}
+
+#card1 {
+  left: calc(50% - 600px);
+  z-index: 1;
+}
+
+#card2 {
+  left: calc(50% - 200px);
+  z-index: 2;
+  transform: scale(1.1);
+}
+
+#card3 {
+  left: calc(50% + 200px);
+  z-index: 1;
+}
+
+.card.activo {
+  z-index: 3;
+  transform: scale(1.2);
+}
+
+.cont-text-card {
+  margin: 10px;
+  text-align: justify;
+  margin: 20px 20px;
+  font-family: "Diact-Regular";
+}
+
+.cont-text-card h3 {
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 20px;
+  font-family: "Abel-Regular";
+}
+
+.cont-text-card p {
+  font-size: 16px;
+}
+
+.cont-form-card {
+  text-align: left;
+  margin: 10px 0;
+}
+
+.input-card {
+  border: NONE;
+  border-bottom: solid #464646 1px;
+  width: 90%;
+  height: 20px;
+  padding: 2px;
+  font-size: 16px;
+  margin-left: 20px;
+  font-family: "Abel-Regular";
+}
+
+.button-card {
+  height: 50px;
+  width: 80px;
+  background: #464646;
+  border-radius: 15px;
+  font-size: 17px;
+  color: #fff;
+  display: block;
+  transition: background 0.3s ease;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-family: "Abel-Regular";
+}
+
+.button-card:hover {
+  background-color: #000000;
+}
+
+.cont-img-card {
+  width: 100%;
+}
+
+.img-card {
+  max-width: 130px;
+  height: auto;
+  margin-top: -40px;
+  margin-left: 50%;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .cont-cards {
+    display: block;
+    align-items: center;
+  }
+
+  .cont-cards {
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    height: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.075);
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+  .card {
+    margin: 10px auto;
+    display: block;
+    width: 80%;
+    height: 550px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: static;
+    border: 1px solid #00000009;
+  }
+
+  .cont-img-card {
+    width: 100%;
+  }
+
+  .img-card {
+    max-width: 130px;
+    height: auto;
+    margin-top: -40px;
+    margin-left: 50%;
+    position: absolute;
+  }
+
+  #card1 {
+    left: 0;
+  }
+
+  #card2 {
+    left: 0;
+    transform: scale(1);
+  }
+
+  #card3 {
+    left: 0;
+  }
+
+  .card.activo {
+    z-index: 3;
+    transform: scale(1);
+  }
+}

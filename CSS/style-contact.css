@@ -1,0 +1,130 @@
+.contacto h2 {
+  font-family: "Abel-Regular";
+}
+
+.cont-contact {
+  display: flex;
+  margin: 25px auto;
+  width: 80%;
+  font-family: "Abel-Regular";
+}
+.cont-contact > div {
+  margin: 0 auto;
+}
+
+.cont-info-contact {
+  background: #202020;
+  padding: 40px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.pEC {
+  color: #ffffff;
+}
+
+.info-contact {
+  color: #c7c7c7;
+  font-size: 17px;
+}
+
+.link-contact {
+  color: #ffffff;
+  font-size: 17px;
+}
+
+.icons-contact {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.socialNC {
+  color: #c7c7c7;
+}
+
+.icons-contact > li {
+  border-radius: 50%;
+  border: solid #c7c7c7;
+  padding: 5px;
+}
+
+.cont-form-contact {
+  padding: 40px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.formC,
+.formB,
+#nombre,
+#correo,
+#web,
+#mensaje {
+  margin-bottom: 20px;
+}
+
+.formC {
+  font-size: 20px;
+  font-weight: bold;
+  color: #555555;
+}
+
+.formC > span {
+  font-size: 15px;
+}
+
+.formB {
+  width: 80px;
+  height: 40px;
+}
+
+.form-mensaje > input {
+  height: 20px;
+  box-shadow: 10px 10px #494949;
+}
+
+textarea {
+  box-shadow: 10px 10px #494949;
+}
+
+.formB {
+  width: 120px;
+  height: 40px;
+  background: #494949;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formB:hover {
+  background-color: #707070;
+}
+
+.formB:active {
+  transform: translateY(2px);
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .cont-contact {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cont-info-contact {
+    order: 2;
+    width: 50%;
+  }
+
+  .cont-form-contact {
+    display: flex;
+    width: 50%;
+  }
+}

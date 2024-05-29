@@ -1,0 +1,52 @@
+.mision {
+  padding: 60px 0;
+}
+
+.contenedor-mision {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.contenedor-mision:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 7px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-mision h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: "Abel-Regular";
+}
+
+.contenedor-mision p {
+  font-size: 1.2rem;
+  color: #666;
+  font-family: "Diact-Regular";
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .contenedor-mision {
+    padding: 10px;
+    width: 85%;
+  }
+
+  .contenedor-mision h2 {
+    font-size: 24px;
+  }
+
+  .contenedor-mision p {
+    font-size: 17px;
+  }
+
+  .contenedor-mision .btn-contacto {
+    padding: 8px 16px;
+  }
+}

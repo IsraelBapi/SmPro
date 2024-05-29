@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "Abel-Regular";
+  src: url("../FONTS/Abel-Regular.ttf") format("TrueType");
+}
+
+@font-face {
+  font-family: "Didact-Regular";
+  src: url("../FONTS/DidactGothic-Regular.ttf") format("TrueType");
+}
+
+.layout {
+  width: 100%;
+  display: grid;
+  grid:
+    "header" auto
+    "body" 1fr
+    "footer" auto
+    / 1fr;
+  gap: 30px;
+}
+
+.header {
+  grid-area: header;
+}
+.body {
+  grid-area: body;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 30px;
+}
+
+h2 {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 27px;
+  padding: 0 20px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 22.5px;
+  color: #494949;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.cont-imgE {
+  width: 100%;
+  overflow: hidden;
+}
+
+.imgE {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .cont-imgE {
+    margin-top: 40px;
+  }
+}
