@@ -112,7 +112,7 @@ textarea {
   transform: translateY(2px);
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .cont-contact {
     flex-direction: column;
     width: 100%;

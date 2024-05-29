@@ -122,7 +122,7 @@
   background-color: #000000;
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .servicio:hover,
   .servicio:hover span,
   .servicio:hover .icono,

@@ -51,7 +51,7 @@
   text-decoration: underline;
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .cont-info-smPro {
     flex-direction: column;
     align-items: center;

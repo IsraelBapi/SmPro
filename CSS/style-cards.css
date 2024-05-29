@@ -108,7 +108,7 @@
   margin-left: 50%;
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .cont-cards {
     display: block;
     align-items: center;
